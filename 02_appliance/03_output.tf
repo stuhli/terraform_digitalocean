@@ -6,8 +6,8 @@ output "jumphost_ip_vpc" {
     value = digitalocean_droplet.jumphost.ipv4_address_private
 }
 
-output "dfirtrack_ip_vpc" {
-    value = digitalocean_droplet.dfirtrack.ipv4_address_private
+output "dfirtrackintern_ip_vpc" {
+    value = digitalocean_droplet.dfirtrackintern.ipv4_address_private
 }
 
 output "appliancevpc_range" {

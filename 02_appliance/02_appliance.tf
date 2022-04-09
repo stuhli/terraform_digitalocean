@@ -48,9 +48,9 @@ resource "digitalocean_droplet" "jumphost" {
     tags = [digitalocean_tag.extern.id]
 }
 
-resource "digitalocean_droplet" "dfirtrack" {
+resource "digitalocean_droplet" "dfirtrackintern" {
     image = "ubuntu-20-04-x64"
-    name = "dfirtrack"
+    name = "dfirtrackintern"
     region = var.region
     size = var.server_size
     ssh_keys = [data.digitalocean_ssh_key.digitalocean.id]
@@ -69,7 +69,7 @@ resource "digitalocean_project" "appliance" {
     purpose     = "Appliance"
     environment = "Development"
     resources   = [
-        digitalocean_droplet.dfirtrack.urn,
+        digitalocean_droplet.dfirtrackintern.urn,
         digitalocean_droplet.jumphost.urn
     ]
 }

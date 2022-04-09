@@ -16,10 +16,10 @@
 * Project: 02_appliance
 * VPC: appliancevpc
 
-| Host          | Droplet           | Size          | Region    | Tags                  |
-|:--------------|:------------------|:--------------|:----------|:----------------------|
-| jumphost      | ubuntu-20-04-x64  | s-1vcpu-1gb   | FRA1      | extern                |
-| dfirtrack     | ubuntu-20-04-x64  | s-2vcpu-4gb   | FRA1      | intern, dfirtrack     |
+| Host              | Droplet           | Size          | Region    | Tags                  |
+|:------------------|:------------------|:--------------|:----------|:----------------------|
+| jumphost          | ubuntu-20-04-x64  | s-1vcpu-1gb   | FRA1      | extern                |
+| dfirtrackintern   | ubuntu-20-04-x64  | s-2vcpu-4gb   | FRA1      | intern, dfirtrack     |
 
 ## Single system
 
