@@ -9,7 +9,6 @@
 |:--------------|:------------------|:--------------|:----------|:----------------------|
 | dfirtrack1804 | ubuntu-18-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
 | dfirtrack2004 | ubuntu-20-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
-| dfirtrack2104 | ubuntu-21-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
 | dfirtrack2110 | ubuntu-21-10-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
 
 ## Appliance
