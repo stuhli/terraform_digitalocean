@@ -3,7 +3,8 @@
 ## DFIRTrack DigitalOcean
 
 * Project: 01_dfirtrack_digitalocean
-* VPC: dfirtracknetwork
+* VPC: dfirtrackmultinetwork
+* FW: dfirtrackmultifw
 
 | Host          | Droplet           | Size          | Region    | Tags                  |
 |:--------------|:------------------|:--------------|:----------|:----------------------|
@@ -25,6 +26,7 @@
 
 * Project: 03_single_system
 * VPC: dfirtracksinglenetwork
+* FW: dfirtracksinglefw
 
 | Host              | Droplet           | Size          | Region    | Tags                  |
 |:------------------|:------------------|:--------------|:----------|:----------------------|

@@ -12,8 +12,8 @@ variable "region" {
 
 # vpc network
 
-resource "digitalocean_vpc" "dfirtracknetwork" {
-    name   = "dfirtracknetwork"
+resource "digitalocean_vpc" "dfirtrackmultinetwork" {
+    name   = "dfirtrackmultinetwork"
     region = "fra1"
 }
 
@@ -31,7 +31,7 @@ resource "digitalocean_droplet" "dfirtrack1804" {
     region = var.region
     size = var.server_size
     ssh_keys = [data.digitalocean_ssh_key.digitalocean.id]
-    vpc_uuid = digitalocean_vpc.dfirtracknetwork.id
+    vpc_uuid = digitalocean_vpc.dfirtrackmultinetwork.id
     tags = [digitalocean_tag.dfirtrack.id]
 }
 
@@ -41,7 +41,7 @@ resource "digitalocean_droplet" "dfirtrack2004" {
     region = var.region
     size = var.server_size
     ssh_keys = [data.digitalocean_ssh_key.digitalocean.id]
-    vpc_uuid = digitalocean_vpc.dfirtracknetwork.id
+    vpc_uuid = digitalocean_vpc.dfirtrackmultinetwork.id
     tags = [digitalocean_tag.dfirtrack.id]
 }
 
@@ -51,7 +51,7 @@ resource "digitalocean_droplet" "dfirtrack2110" {
     region = var.region
     size = var.server_size
     ssh_keys = [data.digitalocean_ssh_key.digitalocean.id]
-    vpc_uuid = digitalocean_vpc.dfirtracknetwork.id
+    vpc_uuid = digitalocean_vpc.dfirtrackmultinetwork.id
     tags = [digitalocean_tag.dfirtrack.id]
 }
 

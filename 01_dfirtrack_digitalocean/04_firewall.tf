@@ -1,7 +1,7 @@
 # external firewall
 
-resource "digitalocean_firewall" "dfirtrackfw" {
-    name = "dfirtrackfw"
+resource "digitalocean_firewall" "dfirtrackmultifw" {
+    name = "dfirtrackmultifw"
 
     # droplets
     droplet_ids = [

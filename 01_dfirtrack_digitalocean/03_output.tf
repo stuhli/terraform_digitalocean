@@ -23,5 +23,5 @@ output "dfirtrack2110_ip_vpc" {
 }
 
 output "dfirtrack_vpc_range" {
-    value = digitalocean_vpc.dfirtracknetwork.ip_range
+    value = digitalocean_vpc.dfirtrackmultinetwork.ip_range
 }
