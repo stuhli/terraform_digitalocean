@@ -24,8 +24,8 @@
 ## Single system
 
 * Project: 03_single_system
-* VPC: dfirtracknetwork
+* VPC: dfirtracksinglenetwork
 
-| Host          | Droplet           | Size          | Region    | Tags                  |
-|:--------------|:------------------|:--------------|:----------|:----------------------|
-| dfirtrack2004 | ubuntu-20-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
+| Host              | Droplet           | Size          | Region    | Tags                  |
+|:------------------|:------------------|:--------------|:----------|:----------------------|
+| dfirtracksingle   | ubuntu-20-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
