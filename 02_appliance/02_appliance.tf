@@ -17,8 +17,8 @@ variable "region" {
 
 # vpc network
 
-resource "digitalocean_vpc" "appliancevpc" {
-    name   = "appliancevpc"
+resource "digitalocean_vpc" "appliancenetwork" {
+    name   = "appliancenetwork"
     region = "fra1"
 }
 
@@ -44,7 +44,7 @@ resource "digitalocean_droplet" "jumphost" {
     region = var.region
     size = var.jumphost_size
     ssh_keys = [data.digitalocean_ssh_key.digitalocean.id]
-    vpc_uuid = digitalocean_vpc.appliancevpc.id
+    vpc_uuid = digitalocean_vpc.appliancenetwork.id
     tags = [digitalocean_tag.extern.id]
 }
 
@@ -54,7 +54,7 @@ resource "digitalocean_droplet" "dfirtrackintern" {
     region = var.region
     size = var.server_size
     ssh_keys = [data.digitalocean_ssh_key.digitalocean.id]
-    vpc_uuid = digitalocean_vpc.appliancevpc.id
+    vpc_uuid = digitalocean_vpc.appliancenetwork.id
     tags = [
         digitalocean_tag.intern.id,
         digitalocean_tag.dfirtrack.id

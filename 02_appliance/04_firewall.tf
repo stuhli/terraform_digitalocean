@@ -32,7 +32,7 @@ resource "digitalocean_firewall" "appliancefwextern" {
         protocol              = "tcp"
         port_range            = "22"
         destination_addresses = [
-            digitalocean_vpc.appliancevpc.ip_range
+            digitalocean_vpc.appliancenetwork.ip_range
         ]
     }
 
@@ -80,7 +80,7 @@ resource "digitalocean_firewall" "appliancefwintern" {
     inbound_rule {
         protocol         = "icmp"
         source_addresses = [
-            digitalocean_vpc.appliancevpc.ip_range
+            digitalocean_vpc.appliancenetwork.ip_range
         ]
     }
 

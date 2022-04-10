@@ -1,11 +1,11 @@
-output "dfirtrack2004_ip_do2" {
+output "dfirtracksingle_ip_public" {
     value = digitalocean_droplet.dfirtracksingle.ipv4_address
 }
 
-output "dfirtrack2004_ip_vpc" {
+output "dfirtrackprivate_ip_private" {
     value = digitalocean_droplet.dfirtracksingle.ipv4_address_private
 }
 
-output "dfirtrack_vpc_range" {
+output "dfirtracksinglenetwork_vpc_range" {
     value = digitalocean_vpc.dfirtracksinglenetwork.ip_range
 }

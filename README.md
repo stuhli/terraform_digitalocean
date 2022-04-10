@@ -15,7 +15,10 @@
 ## Appliance
 
 * Project: 02_appliance
-* VPC: appliancevpc
+* VPC: appliancenetwork
+* FWs:
+    * appliancefwextern
+    * appliancefwintern
 
 | Host              | Droplet           | Size          | Region    | Tags                  |
 |:------------------|:------------------|:--------------|:----------|:----------------------|
