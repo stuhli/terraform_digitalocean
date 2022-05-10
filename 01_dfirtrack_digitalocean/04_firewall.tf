@@ -7,7 +7,8 @@ resource "digitalocean_firewall" "dfirtrackmultifw" {
     droplet_ids = [
         digitalocean_droplet.dfirtrack1804.id,
         digitalocean_droplet.dfirtrack2004.id,
-        digitalocean_droplet.dfirtrack2110.id
+        digitalocean_droplet.dfirtrack2110.id,
+        digitalocean_droplet.dfirtrack2204.id
     ]
 
     # ICMP everywhere -> inbound
