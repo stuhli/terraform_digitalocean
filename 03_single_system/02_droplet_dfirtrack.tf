@@ -26,7 +26,7 @@ resource "digitalocean_tag" "dfirtrack" {
 # droplets
 
 resource "digitalocean_droplet" "dfirtracksingle" {
-    image = "ubuntu-20-04-x64"
+    image = "ubuntu-22-04-x64"
     name = "dfirtracksingle"
     region = var.region
     size = var.server_size

@@ -29,8 +29,8 @@ A secured system which should only be accessible via a jumphost to test firewall
 
 | Host              | Droplet           | Size          | Region    | Tags                  |
 |:------------------|:------------------|:--------------|:----------|:----------------------|
-| jumphost          | ubuntu-20-04-x64  | s-1vcpu-1gb   | FRA1      | extern                |
-| dfirtrackintern   | ubuntu-20-04-x64  | s-2vcpu-4gb   | FRA1      | intern, dfirtrack     |
+| jumphost          | ubuntu-22-04-x64  | s-1vcpu-1gb   | FRA1      | extern                |
+| dfirtrackintern   | ubuntu-22-04-x64  | s-2vcpu-4gb   | FRA1      | intern, dfirtrack     |
 
 ### Single system
 
@@ -42,7 +42,7 @@ A system directly accessible from the Internet to quickly test things or share a
 
 | Host              | Droplet           | Size          | Region    | Tags                  |
 |:------------------|:------------------|:--------------|:----------|:----------------------|
-| dfirtracksingle   | ubuntu-20-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
+| dfirtracksingle   | ubuntu-22-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
 
 ## Basic usage
 

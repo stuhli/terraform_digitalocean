@@ -39,7 +39,7 @@ resource "digitalocean_tag" "dfirtrack" {
 # droplets
 
 resource "digitalocean_droplet" "jumphost" {
-    image = "ubuntu-20-04-x64"
+    image = "ubuntu-22-04-x64"
     name = "jumphost"
     region = var.region
     size = var.jumphost_size
@@ -49,7 +49,7 @@ resource "digitalocean_droplet" "jumphost" {
 }
 
 resource "digitalocean_droplet" "dfirtrackintern" {
-    image = "ubuntu-20-04-x64"
+    image = "ubuntu-22-04-x64"
     name = "dfirtrackintern"
     region = var.region
     size = var.server_size
