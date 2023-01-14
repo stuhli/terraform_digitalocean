@@ -19,7 +19,7 @@ variable "region" {
 
 resource "digitalocean_vpc" "appliancenetwork" {
     name   = "appliancenetwork"
-    region = "fra1"
+    region = var.region
 }
 
 # tags

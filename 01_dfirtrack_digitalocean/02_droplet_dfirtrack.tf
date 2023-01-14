@@ -14,7 +14,7 @@ variable "region" {
 
 resource "digitalocean_vpc" "dfirtrackmultinetwork" {
     name   = "dfirtrackmultinetwork"
-    region = "fra1"
+    region = var.region
 }
 
 # tags
