@@ -14,8 +14,8 @@ Different Ubuntu versions to test the deployment process of [DFIRTrack](https://
 |:--------------|:------------------|:--------------|:----------|:----------------------|
 | dfirtrack1804 | ubuntu-18-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
 | dfirtrack2004 | ubuntu-20-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
-| dfirtrack2110 | ubuntu-21-10-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
 | dfirtrack2204 | ubuntu-22-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
+| dfirtrack2210 | ubuntu-22-10-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
 
 ### Appliance
 
