@@ -45,9 +45,9 @@ resource "digitalocean_droplet" "dfirtrack2004" {
     tags = [digitalocean_tag.dfirtrack.id]
 }
 
-resource "digitalocean_droplet" "dfirtrack2110" {
-    image = "ubuntu-21-10-x64"
-    name = "dfirtrack2110"
+resource "digitalocean_droplet" "dfirtrack2204" {
+    image = "ubuntu-22-04-x64"
+    name = "dfirtrack2204"
     region = var.region
     size = var.server_size
     ssh_keys = [data.digitalocean_ssh_key.digitalocean.id]
@@ -55,9 +55,9 @@ resource "digitalocean_droplet" "dfirtrack2110" {
     tags = [digitalocean_tag.dfirtrack.id]
 }
 
-resource "digitalocean_droplet" "dfirtrack2204" {
-    image = "ubuntu-22-04-x64"
-    name = "dfirtrack2204"
+resource "digitalocean_droplet" "dfirtrack2210" {
+    image = "ubuntu-22-10-x64"
+    name = "dfirtrack2210"
     region = var.region
     size = var.server_size
     ssh_keys = [data.digitalocean_ssh_key.digitalocean.id]
@@ -75,7 +75,7 @@ resource "digitalocean_project" "dfirtrack_digitalocean" {
     resources   = [
         digitalocean_droplet.dfirtrack1804.urn,
         digitalocean_droplet.dfirtrack2004.urn,
-        digitalocean_droplet.dfirtrack2110.urn,
-        digitalocean_droplet.dfirtrack2204.urn
+        digitalocean_droplet.dfirtrack2204.urn,
+        digitalocean_droplet.dfirtrack2210.urn,
     ]
 }
