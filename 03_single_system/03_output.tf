@@ -1,8 +1,8 @@
-output "dfirtracksingle_ip_public" {
+output "dfirtracksingle_ip_public_external" {
     value = digitalocean_droplet.dfirtracksingle.ipv4_address
 }
 
-output "dfirtrackprivate_ip_private" {
+output "dfirtrackprivate_ip_private_internal" {
     value = digitalocean_droplet.dfirtracksingle.ipv4_address_private
 }
 
