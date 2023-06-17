@@ -6,9 +6,9 @@
 
 Different Ubuntu versions to test the deployment process of [DFIRTrack](https://github.com/dfirtrack/dfirtrack) or personal Ansible roles.
 
-* Project: 01_dfirtrack_digitalocean
-* VPC: dfirtrackmultinetwork
-* FW: dfirtrackmultifw
+* Project: `01_dfirtrack_digitalocean`
+* VPC: `dfirtrackmultinetwork`
+* FW: `dfirtrackmultifw`
 
 | Host          | Droplet           | Size          | Region    | Tags                  |
 |:--------------|:------------------|:--------------|:----------|:----------------------|
@@ -21,11 +21,11 @@ Different Ubuntu versions to test the deployment process of [DFIRTrack](https://
 
 A secured system which should only be accessible via a jumphost to test firewalls and VPCs.
 
-* Project: 02_appliance
-* VPC: appliancenetwork
+* Project: `02_appliance`
+* VPC: `appliancenetwork`
 * FWs:
-    * appliancefwextern
-    * appliancefwintern
+    * `appliancefwextern`
+    * `appliancefwintern`
 
 | Host              | Droplet           | Size          | Region    | Tags                  |
 |:------------------|:------------------|:--------------|:----------|:----------------------|
@@ -36,13 +36,30 @@ A secured system which should only be accessible via a jumphost to test firewall
 
 A system directly accessible from the Internet to quickly test things or share access.
 
-* Project: 03_single_system
-* VPC: dfirtracksinglenetwork
-* FW: dfirtracksinglefw
+* Project: `03_single_system`
+* VPC: `dfirtracksinglenetwork`
+* FW: `dfirtracksinglefw`
 
 | Host              | Droplet           | Size          | Region    | Tags                  |
 |:------------------|:------------------|:--------------|:----------|:----------------------|
 | dfirtracksingle   | ubuntu-22-04-x64  | s-2vcpu-4gb   | FRA1      | dfirtrack             |
+
+### Droplet test
+
+Multiple systems to test performance of different droplet sizes.
+
+* Project: `04_droplet_test`
+* VPC: `dropletmultinetwork`
+* FW: `dropletmultifw`
+
+| Host                      | Droplet           | Size                      | Region    | Tags                  |
+|:--------------------------|:------------------|:--------------------------|:----------|:----------------------|
+| s-2vcpu-4gb               | ubuntu-22-04-x64  | s-2vcpu-4gb               | FRA1      | ---                   |
+| s-4vcpu-8gb               | ubuntu-22-04-x64  | s-4vcpu-8gb               | FRA1      | ---                   |
+| s-8vcpu-16gb              | ubuntu-22-04-x64  | s-8vcpu-16gb              | FRA1      | ---                   |
+| s-2vcpu-4gb-intel         | ubuntu-22-04-x64  | s-2vcpu-4gb-intel         | FRA1      | ---                   |
+| s-4vcpu-8gb-intel         | ubuntu-22-04-x64  | s-4vcpu-8gb-intel         | FRA1      | ---                   |
+| s-8vcpu-16gb-intel        | ubuntu-22-04-x64  | s-8vcpu-16gb-intel        | FRA1      | ---                   |
 
 ## Basic usage
 
@@ -64,8 +81,10 @@ The commands below rely on a environment variable `DO_PAT` containing your _pers
     * `terraform apply 11_build.tfplan`
 * refresh status
     * `terraform refresh -var "do_token=${DO_PAT}"`
-* get output data (e.g. IPs)
+* show status
     * `terraform show`
+* get output data (e.g. IPs)
+    * `terraform output`
 * destroy infra
     * `terraform destroy -var "do_token=${DO_PAT}" -auto-approve`
 * destroy infra (alternative)
