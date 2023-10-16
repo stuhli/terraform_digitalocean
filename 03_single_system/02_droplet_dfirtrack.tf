@@ -37,7 +37,7 @@ resource "digitalocean_droplet" "dfirtracksingle" {
 
 # project
 
-resource "digitalocean_project" "dfirtrack_digitalocean" {
+resource "digitalocean_project" "single_system" {
     name        = "03_single_system"
     description = "Testing DFIRTrack deployment"
     purpose     = "Web Application"
